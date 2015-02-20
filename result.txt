@@ -1,0 +1,13 @@
+Line no          Token no                Token                   Lexeme
+1                1               Keyword                         i
+1                2               Assignment Operator             =
+1                3               Keyword                         i
+1                4               Arithmetic Operator             +
+1                5               Delimiter                       ;
+2                6               Keyword                         j
+2                7               Comparision Operator            ==
+2                8               Keyword                         j
+2                9               Arithmetic Operator             *
+2                10              Delimiter                       ;
+3                11              Keyword                         int
+3                12              Delimiter                       ;
