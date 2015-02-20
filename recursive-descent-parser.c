@@ -91,3 +91,10 @@ void error()
         printf("\nInvalid Expression");
         exit(0);
 }
+
+/* O/P:
+Enter expression:a+a
+Valid Expression
+--------------------
+Enter expression:+a
+Invalid expression
