@@ -15,3 +15,14 @@ int yywrap()
 {
   return 1;
 }
+
+/*
+O/P:
+lex octhex.l
+cc lex.yy.c
+./a.out
+o5
+this is an octal number
+ox23
+this is a hexadecimal number
+*/
