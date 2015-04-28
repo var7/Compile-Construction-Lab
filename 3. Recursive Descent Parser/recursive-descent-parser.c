@@ -22,7 +22,7 @@ int main()
         printf("Enter expression:");
         scanf("%s",ip);
         E(); //call start symbol fn
-        printf("\nValid expression");
+        printf("\nValid expression\n");
         return 0;
 }
 
@@ -88,7 +88,7 @@ int isAlpha(char c)
 
 void error()
 {
-        printf("\nInvalid Expression");
+        printf("\nInvalid Expression\n");
         exit(0);
 }
 
@@ -97,4 +97,4 @@ Enter expression:a+a
 Valid Expression
 --------------------
 Enter expression:+a
-Invalid expression
+Invalid expression*/
