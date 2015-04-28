@@ -7,7 +7,7 @@ Int [0-9]+
 {Float} printf("this is a floating point number");
 {Int} printf("this is an Integer");
 %%
-main()
+int main()
 {
   yylex();
 }
