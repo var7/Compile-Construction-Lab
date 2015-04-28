@@ -17,7 +17,7 @@ int yywrap()
 {
   return 1;
 }
-main(int argc, char *argv[])
+int main(int argc, char *argv[])
 {
   if(argc!=2)
   {
@@ -26,7 +26,7 @@ main(int argc, char *argv[])
   }
   yyin=fopen(argv[1],"r");
   yylex();
-  printf("No of characters=%d\nNo of words=%d\nNo of spaces=%d\nNo of lines=%d",c,w,s,l);
+  printf("No of characters=%d\nNo of words=%d\nNo of spaces=%d\nNo of lines=%d\n",c,w,s,l);
 }
 
 /*

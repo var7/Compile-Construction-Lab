@@ -1,13 +1,15 @@
 %{
   //Program to check if a number is a hex or octal
 %}
-Oct [o][0-9]+
-Hex [o][x|X][0-9A-Fa-f]+
+Oct [0][0-9]+
+Hex [0][x|X][0-9A-Fa-f]+
+Bin [0][b][1|0]+
 %%
 {Hex} printf("this is a hexadecimal number");
 {Oct} printf("this is an octal number");
+{Bin} printf("this is a binary number");
 %%
-main()
+int main()
 {
   yylex();
 }
