@@ -34,17 +34,17 @@ F    : '(' E ')'    { $$=$2; }
 
 int yylex(){
 
-int c;
+	int c;
 
-c=getchar();
+	c=getchar();
 
-if(isdigit(c))
+	if(isdigit(c))
 
-{
+	{	
 
-    yylval=c-'0';
+   		 yylval=c-'0';
 
-    return DIGIT;
+    		return DIGIT;
 
 }
 

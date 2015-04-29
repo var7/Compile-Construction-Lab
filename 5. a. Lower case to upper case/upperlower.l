@@ -12,7 +12,7 @@ upper [A-Z]
 {letter} {up(yytext);}
 {upper} {low(yytext);}
 %%
-main()
+int main()
 {
   yylex();
 }
