@@ -12,38 +12,38 @@
 %left '!'
 
 %%
-S : ST1 {printf("Input accepted.\n");exit(0);};
+S       : ST1 {printf("Input accepted.\n");exit(0);};
 ST1    :    DO '{' ST '}' WHILE'(' E2 ')'';';
 ST      :     ST ST
-          | E';'
-          ;
+                | E';'
+            ;
 E       : ID'='E
-         | E'+'E
-         | E'-'E
-         | E'*'E
-         | E'/'E
-         | E'<'E
-         | E'>'E
-         | E LE E
-         | E GE E
-         | E EQ E
-         | E NE E
-         | E OR E
-         | E AND E
-         | ID
-         | NUM
-         ;
+          | E'+'E
+          | E'-'E
+          | E'*'E
+          | E'/'E
+          | E'<'E
+          | E'>'E
+          | E LE E
+          | E GE E
+          | E EQ E
+          | E NE E
+          | E OR E
+          | E AND E
+          | ID
+          | NUM
+          ;
 E2     : E'<'E
-         | E'>'E
-         | E LE E
-         | E GE E
-         | E EQ E
-         | E NE E
-         | E OR E
-         | E AND E
-         | ID
-         | NUM
-         ;
+          | E'>'E
+          | E LE E
+          | E GE E
+          | E EQ E
+          | E NE E
+          | E OR E
+          | E AND E
+          | ID
+          | NUM
+          ;
 %%
 
 #include "lex.yy.c"

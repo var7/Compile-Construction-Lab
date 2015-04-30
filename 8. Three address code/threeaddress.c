@@ -2,6 +2,7 @@
 
 #include <stdio.h>
 #include <string.h>
+
 char ip[20], op[20], arg1[20], arg2[20], res[20];
 char r[5] = {'1', '2', '3', '4', '5'};
 int l, p, j = 0;
@@ -9,7 +10,8 @@ void rep(int, int, int);
 void repl(int, int, int);
 void check(int, char);
 int oppr(char);
-void main()
+
+int main()
 {
     int i;
     printf("Enter the input Expression\n");
