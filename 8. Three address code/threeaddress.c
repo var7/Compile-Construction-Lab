@@ -15,7 +15,7 @@ int main()
 {
     int i;
     printf("Enter the input Expression\n");
-    scanf("%s", ip);
+    gets(ip);
     l = strlen(ip);
     for (i = 0; i < l; i++)
     {

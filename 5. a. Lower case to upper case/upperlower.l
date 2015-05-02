@@ -1,7 +1,7 @@
 %{
   //program to convert from upper case to lower case and from lower case to upper case
-  #include<stdio.h>
-  #include<ctype.h>
+  #include <stdio.h>
+  #include <ctype.h>
   int k;
   void up(char *);
   void low(char *);
