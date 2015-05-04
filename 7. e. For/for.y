@@ -63,10 +63,12 @@ int main()
    printf("Enter the exp: ");
    yyparse();
 }
+
 int yywrap()
 {
   return 1;
 }
+
 yyerror(char *s)
 {
 	printf("%s",s);
