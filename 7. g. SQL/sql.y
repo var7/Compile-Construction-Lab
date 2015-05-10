@@ -1,0 +1,55 @@
+%%
+
+    S         : ST1';' {printf("INPUT ACCEPTED.... \n\t\t...www.2k8cse.cu.cc\n");exit(0);};
+    ST1     : SELECT attributeList FROM tableList ST2
+               | SELECT DISTINCT attributeList FROM tableList ST2
+               ;
+    ST2     : WHERE COND ST3
+               | ST3
+               ;
+    ST3     : GROUP attributeList ST4
+               | ST4
+               ;
+    ST4     : HAVING COND ST5
+               | ST5
+               ;
+    ST5     : ORDER attributeList ST6
+               |
+               ;
+    ST6     : DESC
+               | ASC
+               |
+               ;
+attributeList :     ID','attributeList
+               | '*'
+               | ID
+               ;
+ tableList    : ID',' tableList
+               | ID
+               ;
+    COND    : COND OR COND
+               | COND AND COND
+               | E
+               ;
+E         : F '=' F
+               | F '<' F 
+               | F '>' F  
+               | F LE F 
+               | F GE F
+               | F EQ F
+               | F NE F
+               | F OR F 
+               | F AND F 
+               | F LIKE F 
+               ;
+    F         : ID 
+               | NUM  
+               ;
+%%
+#include"lex.yy.c"
+#include<ctype.h>
+main()
+{
+    printf("Enter the query:");
+    yyparse();
+}  
